@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.OPSEPizzaProject.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.OPSEPizzaProject.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.OPSEPizzaProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Light Theme -->
+    <style name="Theme.OPSEPizzaProject" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/aurora_1</item>
+        <item name="colorPrimaryDark">@color/aurora_2</item>
+        <item name="colorAccent">@color/aurora_3</item>
+        <item name="android:colorBackground">@color/snow_storm_3</item>
+        <item name="colorSurface">@color/snow_storm_2</item>
+        <item name="colorOnPrimary">@color/snow_storm_3</item>
+        <item name="colorOnBackground">@color/polar_night_1</item>
+        <item name="colorOnSurface">@color/polar_night_2</item>
+    </style>
+
+
+</resources>
