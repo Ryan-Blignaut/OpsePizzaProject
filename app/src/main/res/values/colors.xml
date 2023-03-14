@@ -17,4 +17,21 @@
     <color name="aurora_5">#A3BE8C</color>
     <color name="aurora_6">#B48EAD</color>
 
+    <color name="nord_polar_night_0">#2E3440</color>
+    <color name="nord_polar_night_1">#3B4252</color>
+    <color name="nord_polar_night_2">#434C5E</color>
+    <color name="nord_polar_night_3">#4C566A</color>
+    <color name="nord_snow_storm_0">#D8DEE9</color>
+    <color name="nord_snow_storm_1">#E5E9F0</color>
+    <color name="nord_snow_storm_2">#ECEFF4</color>
+    <color name="nord_frost_0">#8FBCBB</color>
+    <color name="nord_frost_1">#88C0D0</color>
+    <color name="nord_frost_2">#81A1C1</color>
+    <color name="nord_frost_3">#5E81AC</color>
+    <color name="nord_red">#BF616A</color>
+    <color name="nord_orange">#D08770</color>
+    <color name="nord_yellow">#EBCB8B</color>
+    <color name="nord_green">#A3BE8C</color>
+    <color name="nord_teal">#8FBCBB</color>
+    <color name="nord_blue">#88C0D0</color>
 </resources>

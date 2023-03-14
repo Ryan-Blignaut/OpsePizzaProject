@@ -1,19 +1,22 @@
 package me.ryanblignaut.opsepizzaproject
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.navigation.NavigationView
 import me.ryanblignaut.opsepizzaproject.backend.LocalNotificationManager
 import me.ryanblignaut.opsepizzaproject.databinding.ActivityMainBinding
+import me.ryanblignaut.opsepizzaproject.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,31 +38,33 @@ class MainActivity : AppCompatActivity() {
                 "Test",
                 "Hello from PIZZA",
                 1
-            );
-
-
-            //
-//            val intent = Intent(this, SecondActivity::class.java)
-//                .apply {
-//                putExtra("EXTRA_MESSAGE", "Hello from FirstActivity!")
-//            }
-
-
+            )
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                .setAction("Action", null).show()
         }
 
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
-
-
         val navView: NavigationView = binding.navView
 
-        val username = intent.getStringExtra("username")
 
+        val username = intent.getStringExtra("username")
+        // Set the username in the navigation drawer.
         val headerView: View = navView.getHeaderView(0)
+        // Get the username textview from the header.
         val usernameTextView: TextView = headerView.findViewById(R.id.username_textview)
+        // Set the username textview to the username.
         usernameTextView.text = username
+
+
+        val logoutButton: Button = headerView.findViewById(R.id.btnLogout)
+
+
+        logoutButton.setOnClickListener {
+            // Navigate back to the login screen.
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val navController = findNavController(R.id.nav_host_fragment_content_main)

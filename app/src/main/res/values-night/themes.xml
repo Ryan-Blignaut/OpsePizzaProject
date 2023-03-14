@@ -1,13 +1,24 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Dark Theme -->
-    <style name="Theme.OPSEPizzaProject" parent="Theme.AppCompat.NoActionBar">
-        <item name="colorPrimary">@color/aurora_1</item>
-        <item name="colorPrimaryDark">@color/aurora_2</item>
-        <item name="colorAccent">@color/aurora_3</item>
-        <item name="android:colorBackground">@color/polar_night_1</item>
-        <item name="colorSurface">@color/polar_night_2</item>
-        <item name="colorOnPrimary">@color/snow_storm_3</item>
-        <item name="colorOnBackground">@color/snow_storm_1</item>
-        <item name="colorOnSurface">@color/snow_storm_2</item>
+    <style name="Theme.OPSEPizzaProject" parent="Theme.OPSEPizzaProject.Dark">
     </style>
+
+
+
+
+    <style name="AppTheme.Nord" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/nord_blue</item>
+        <item name="colorPrimaryVariant">@color/nord_polar_night_1</item>
+        <item name="colorOnPrimary">@color/nord_snow_storm_0</item>
+        <item name="colorSecondary">@color/nord_green</item>
+        <item name="colorSecondaryVariant">@color/nord_polar_night_2</item>
+        <item name="colorOnSecondary">@color/nord_snow_storm_0</item>
+        <item name="android:textColorPrimary">@color/nord_polar_night_3</item>
+        <item name="android:textColorSecondary">@color/nord_polar_night_2</item>
+        <item name="android:colorBackground">@color/nord_polar_night_0</item>
+        <item name="colorSurface">@color/nord_polar_night_1</item>
+        <item name="colorOnSurface">@color/nord_snow_storm_0</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
+
 </resources>
