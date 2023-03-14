@@ -30,6 +30,13 @@
             android:foregroundGravity="right"
             app:srcCompat="@mipmap/ic_launcher_round" />
 
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/logout" />
+
         <ToggleButton
             android:id="@+id/toggle_button"
             android:layout_width="wrap_content"
@@ -38,7 +45,14 @@
             android:text="Toggle" />
     </LinearLayout>
 
+<!--    <TextView android:id="@+id/username_textview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="@dimen/nav_header_vertical_spacing"-->
+<!--        android:text="Username"/>-->
+
     <TextView
+        android:id="@+id/username_textview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"

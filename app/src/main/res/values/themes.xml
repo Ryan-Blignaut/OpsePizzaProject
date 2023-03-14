@@ -10,6 +10,7 @@
     <style name="Theme.OPSEPizzaProject.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
+
     <!-- Light Theme -->
     <style name="Theme.OPSEPizzaProject" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/aurora_1</item>
