@@ -34,4 +34,13 @@
         <item name="colorOnSurface">@color/snow_storm_2</item>
     </style>
 
+    <style name="Theme.OPSEPizzaProject.Dark.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.OPSEPizzaProject.Dark.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.OPSEPizzaProject.Dark.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

@@ -1,5 +1,6 @@
 package me.ryanblignaut.opsepizzaproject
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -54,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         // Get the username textview from the header.
         val usernameTextView: TextView = headerView.findViewById(R.id.username_textview)
         // Set the username textview to the username.
-        usernameTextView.text = username
+        usernameTextView.text = "Hello $username"
 
 
         val logoutButton: Button = headerView.findViewById(R.id.btnLogout)

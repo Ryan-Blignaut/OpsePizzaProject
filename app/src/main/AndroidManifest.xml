@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -19,6 +20,7 @@
             android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
@@ -30,8 +32,7 @@
             android:name=".MainActivity"
             android:exported="false">
 
-            <!--android:theme="@style/Theme.OPSEPizzaProject.Dark"-->
-
+            <!-- android:theme="@style/Theme.OPSEPizzaProject.Dark" -->
 
         </activity>
     </application>

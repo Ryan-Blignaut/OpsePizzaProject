@@ -38,11 +38,11 @@ class LocalNotificationManager {
 
         // Build the notification
         val builder: NotificationCompat.Builder = NotificationCompat.Builder(context, channelId)
-            .setSmallIcon(R.drawable.ic_launcher_background)
+            .setSmallIcon(R.drawable.ic_launcher_new_foreground)
             .setContentTitle(title)
             .setContentText(message)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-            .setAutoCancel(true)
+            .setAutoCancel(false)
 
         // Show the notification
         notificationManager.notify(notificationId, builder.build())
